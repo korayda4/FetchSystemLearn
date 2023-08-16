@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgb(145, 255, 226) 0%, rgb(121, 255, 237) 100%);
+    backdrop-filter: blur(100px);
+}
+
+.container {
+    justify-content: space-between;
+    gap: 8px;
+    margin: 12px;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* max-width: 1600px; */
+}
+
+.post {
+    max-width: 400px;
+    min-width: 400px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    background-color: rgb(210, 210, 210);
+    border-radius: 12px;
+    -webkit-box-shadow: 10px 10px 26px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px -3px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 26px -3px rgba(0,0,0,0.75);
+}
+
+.stats {
+    justify-content: space-between;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    margin: 6px;
+}
+
+.name {
+    border-radius: 12px 12px 0px 0px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(0, 255, 255, 0.282);
+}
+
+.postComment {
+    word-wrap: normal;
+    word-wrap: break-word;
+    border-radius: 12px;
+    background-color: aliceblue;
+    padding: 24px;
+    font-size: 12px;
+}
+
+img {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.showUser {
+    padding: 24px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.696);
+    position: fixed;
+    /* background-color: rgb(220, 220, 220); */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ustDiv {
+    align-items: center;
+    background-color: rgb(255, 238, 0);
+    padding: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.altDiv {
+    padding: 12px;
+    background-color: rgb(52, 228, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancelBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: red;
+    border-radius: 2px;
+    padding: 6px;
+}
+
+.showComments {
+    max-height: 400px;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+    padding: 24px;
+    background-color: transparent;
+    position: fixed;
+    /* background-color: rgb(220, 220, 220); */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.comment {
+    min-width: 225px;
+    background-color: beige;
+    padding: 12px;
+}
+
+.name {
+    padding: 12px;
+}
