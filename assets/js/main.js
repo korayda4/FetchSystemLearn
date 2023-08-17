@@ -36,6 +36,7 @@ fetch('https://jsonplaceholder.typicode.com/comments')
 
 function addPost(posts) {
     let valueName;
+    
     let value = 0;
 
     posts.forEach((element) => {

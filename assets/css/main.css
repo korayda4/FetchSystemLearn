@@ -3,7 +3,6 @@ body {
     padding: 0;
     background: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgb(145, 255, 226) 0%, rgb(121, 255, 237) 100%);
-    backdrop-filter: blur(100px);
 }
 
 .container {
@@ -56,6 +55,7 @@ body {
 }
 
 img {
+    cursor: pointer;
     background-color: aliceblue;
     border: none;
     border-radius: 12px;
