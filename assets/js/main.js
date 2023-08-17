@@ -35,7 +35,7 @@ async function initializeData() {
 }
 
 function addPost(posts) {
-    let previousUserName = "";
+    let veriableUserName = "";
     
     posts.forEach((post) => {
         const user = allUsers.find((u) => u.id === post.userId);
@@ -58,10 +58,10 @@ function addPost(posts) {
                 </div>
             </div>`;
 
-        if (previousUserName === user.name) {
+        if (veriableUserName === user.name) {
             value++;
         }
-        previousUserName = user.name;
+        veriableUserName = user.name;
 
         container.appendChild(postElement);
     });
