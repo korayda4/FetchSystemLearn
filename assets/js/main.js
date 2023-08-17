@@ -16,7 +16,7 @@ container.addEventListener("click", (e) => {
 });
 
 let allUsers;
-let allComments;
+let allComments
 
 async function fetchData(url) {
     const response = await fetch(url);
@@ -30,16 +30,15 @@ async function initializeData() {
         const posts = await fetchData('https://jsonplaceholder.typicode.com/posts');
         addPost(posts);
     } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('404 Error Found', error);
     }
 }
 
 function addPost(posts) {
     let veriableUserName = "";
-    
+    let value = 0;
     posts.forEach((post) => {
         const user = allUsers.find((u) => u.id === post.userId);
-
         const postElement = document.createElement("div");
         postElement.classList.add("post");
         postElement.innerHTML = `
@@ -62,7 +61,6 @@ function addPost(posts) {
             value++;
         }
         veriableUserName = user.name;
-
         container.appendChild(postElement);
     });
 }
