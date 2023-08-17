@@ -111,10 +111,10 @@ function showComments(e) {
         <div class="comment">
             <div class="cancelBtn">✗</div>
             <div class="name">
-                <h3>${comment.name}</h3>
+                Name <h4>${comment.name}</h4>
             </div>
             <div class="commentBody">
-                <h5>${comment.body}</h5>
+                Comment <h5>${comment.body}</h5>
             </div>
         </div>`).join('');
 
